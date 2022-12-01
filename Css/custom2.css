@@ -1064,9 +1064,9 @@ dl dd {
 .bg-transparent {
   background-color: transparent;
 }
-.bg-primary {
-  /* background-color: ; */
-}
+/* .bg-primary {
+  background-color: ;
+} */
 .bg-white {
   background-color: #fff;
 }
@@ -1264,7 +1264,6 @@ dl dd {
   width: 100%;
   opacity: 0.3;
 }
-
 
 .rdx-img-overlay9:after {
   left: auto;
@@ -1833,7 +1832,7 @@ label {
 
 input[type="checkbox"],
 input[type="radio"] {
-
+  
   opacity: 0;
   margin-left: 1px !important;
 }
@@ -5598,7 +5597,7 @@ a,
 .site-button-link.yellow:hover,
 .site-button-link.yellow:active,
 .site-button-link.yellow:focus {
-  color: ##d4af19;
+  color: #d4af19;
 }
 /* purple */
 
@@ -7707,10 +7706,10 @@ footer#footer {
   height: 100%;
 }
 .rdx-top-footer-overlay:before {
-  opacity: ;
+  opacity: 1;
 }
 .rdx-bottom-footer-overlay:before {
-  opacity: ;
+  opacity: 1;
 }
 footer p {
   line-height: 24px;
@@ -7874,7 +7873,6 @@ button.scroltop {
   color: #fff;
 }
 /*= Section Content Part =*/
-
 
 @media only screen and (max-width: 1024px) {
   .section-full {

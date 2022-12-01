@@ -13,33 +13,18 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   position: relative;
-  background-color: #F7F8FA;
+  background-color: #f7f8fa;
 }
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 10px;
-  right: 43px;
-  z-index: 99;
-  font-size: 18px;
-  border: 3px solid #285430;
-  outline: none;
-  background-color: #222222;
-  color: white;
-  cursor: pointer;
-  padding: 8px 10px;
-  line-height: 1;
-  text-align: center;
-  border-radius: 4px;
+.header nav {
+  padding: 0;
 }
-#myBtn:hover {
-  background-color: #555;
-}
+
 .navbar {
-  transition: all 1s;
-  width: 100vw;
-  /* color: #555; */
-  background-color: #285430;
+  transition: all 0.4s;
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 40%, rgba(106, 175, 8, 1) 70%);
+  /* clip-path: polygon(30% 0, 100% 0, 100% 1%, 100% 100%, 40% 99%); */
 }
 
 .navbar .nav-link {
@@ -48,17 +33,44 @@ body {
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-  color: #7abf18;
+  color: #fff;
   text-decoration: none;
 }
 
 .navbar .navbar-brand {
-  color: #fff;
+  color: rgba(106, 175, 8, 1);
+  height: 100%;
+}
+.navbar .nav-logo {
+  height: 100%;
+  width: 20%;
+  background-color: rgb(255, 255, 255);
+
+  z-index: 3;
 }
 
+.navbar .nav-list {
+  width: 80%;
+  position: relative;
+  background-color: rgba(106, 175, 8, 1);
+}
+.navbar .skew30 {
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  background-color: #ffffff;
+  left: -50px;
+  width: 10%;
+  height: 100%;
+  -webkit-transform: skew(30deg);
+  -moz-transform: skew(30deg);
+  -o-transform: skew(30deg);
+  -ms-transform: skew(30deg);
+  transform: skew(30deg);
+  z-index: 1;
+}
 /* Change navbar styling on scroll */
 .navbar.active {
-  background: #68b984;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -79,7 +91,7 @@ body {
 /* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
   .navbar {
-    background: #68b984;
+    background: #fff;
   }
 
   .navbar .navbar-brand,
@@ -92,11 +104,53 @@ body {
   font-size: 0.9rem !important;
 }
 
-.silde {
+/* Back to top */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 43px;
+  z-index: 99;
+  font-size: 18px;
+  border: 3px solid #285430;
+  outline: none;
+  background-color: #222222;
+  color: white;
+  cursor: pointer;
+  padding: 8px 10px;
+  line-height: 1;
+  text-align: center;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+
+.slide {
+  width: 100vw;
+  height: 680px;
+  font-size: 32px;
+}
+/* .slide .carousel,
+.carousel-inner,
+.carousel-item,
+.bg-slide {
+  width: 100%;
+  height: 100vh;
+} */
+/* .slide .bg-slide {
+  
+  overflow: hidden;
+  position: relative;
   width: 100vw;
   height: 100vh;
-  /* background-color: black; */
-}
+} */
+
+/* .slide .bg-slide .img-slide{
+  width: 100vw;
+  height: 100vh;
+  transform: scale(125%);
+} */
 
 .carousel-control-next,
 .carousel-control-prev {
@@ -260,7 +314,7 @@ body {
 }
 
 .bg-white {
-  background-color: #FFF;
+  background-color: #fff;
 }
 .m-t40 {
   margin-top: 40px;
@@ -279,14 +333,9 @@ body {
 .mack-an-appointment .section-head {
   margin-bottom: 20px;
 }
-.contact .text-primary{
-  color: #6AAF08 !important;
+.contact .text-primary {
+  color: #6aaf08 !important;
 }
-
-
-
-
-
 
 /* ourTestimonials */
 .ourTestimonials {

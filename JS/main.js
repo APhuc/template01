@@ -1,7 +1,7 @@
 // NavBar
 $(function () {
   $(window).on('scroll', function () {
-    if ($(window).scrollTop() > 20) {
+    if ($(window).scrollTop() > 40) {
       $('.navbar').addClass('active');
     } else {
       $('.navbar').removeClass('active');
